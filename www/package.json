@@ -1,0 +1,36 @@
+{
+  "name": "illumi-viz",
+  "version": "0.0.1",
+  "description": "Netlist visualization tool",
+  "main": "index.js",
+  "bin": {
+    "illumi-viz": ".bin/illumi-viz.js"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheProgrammerIncarnate/IllumiViz.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "Cole Johnson <https://github.com/TheProgrammerIncarnate>",
+  "license": "(MIT OR Apache-2.0)",
+  "bugs": {
+    "url": "https://github.com/TheProgrammerIncarnate/IllumiViz/issues"
+  },
+  "homepage": "https://github.com/TheProgrammerIncarnate/IllumiViz#readme",
+  "devDependencies": {
+    "illumi-viz": "file:../pkg",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
+  }
+}
