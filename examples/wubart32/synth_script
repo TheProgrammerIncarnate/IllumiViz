@@ -1,0 +1,9 @@
+rm serv_built.json
+yosys -p 'read -vlog2k rtl/*
+hierarchy -top serv_top
+prep -auto-top
+write_json wubart32_built.json
+show -format dot -prefix wubart32_dot'
+#yosys -p 'synth -flatten -json serv_built.json' rtl/wubart32_top.v
+
+Unfinished!

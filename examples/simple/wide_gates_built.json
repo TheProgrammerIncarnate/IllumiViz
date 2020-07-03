@@ -1,0 +1,521 @@
+{
+  "creator": "Yosys 0.9+2406 (git sha1 fa8cb3e3, gcc 9.3.0-1 -march=x86-64 -mtune=generic -O2 -fstack-protector-strong -fno-plt -fPIC -Os)",
+  "modules": {
+    "wide_gates": {
+      "attributes": {
+        "hdlname": "\\wide_gates",
+        "top": "00000000000000000000000000000001",
+        "src": "rtl/wide_gates.v:2.1-21.10"
+      },
+      "ports": {
+        "in1": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "in2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "in3": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "in4": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "in5": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "in6": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "in7": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "in8": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "out1": {
+          "direction": "output",
+          "bits": [ 10 ]
+        },
+        "out2": {
+          "direction": "output",
+          "bits": [ 11 ]
+        },
+        "all_high": {
+          "direction": "output",
+          "bits": [ 12 ]
+        }
+      },
+      "cells": {
+        "$and$rtl/wide_gates.v:17$3": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:17.12-17.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 13 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:18$4": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:18.16-18.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 8 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:19$5": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:19.17-19.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 7 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:20$10": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 6 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:20$11": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 7 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:20$12": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 8 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:20$13": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 9 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:20$7": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:20$8": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "B": [ 4 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$and$rtl/wide_gates.v:20$9": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21 ],
+            "B": [ 5 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$or$rtl/wide_gates.v:16$1": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:16.12-16.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$or$rtl/wide_gates.v:16$2": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:16.12-16.27"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22 ],
+            "B": [ 4 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$or$rtl/wide_gates.v:19$6": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/wide_gates.v:19.16-19.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 8 ],
+            "Y": [ 11 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$rtl/wide_gates.v:19$5_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:19.17-19.26"
+          }
+        },
+        "$and$rtl/wide_gates.v:20$10_Y": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.47"
+          }
+        },
+        "$and$rtl/wide_gates.v:20$11_Y": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.53"
+          }
+        },
+        "$and$rtl/wide_gates.v:20$12_Y": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.59"
+          }
+        },
+        "$and$rtl/wide_gates.v:20$7_Y": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.29"
+          }
+        },
+        "$and$rtl/wide_gates.v:20$8_Y": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.35"
+          }
+        },
+        "$and$rtl/wide_gates.v:20$9_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:20.20-20.41"
+          }
+        },
+        "$or$rtl/wide_gates.v:16$1_Y": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:16.12-16.21"
+          }
+        },
+        "all_high": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:14.9-14.17"
+          }
+        },
+        "in1": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:4.8-4.11"
+          }
+        },
+        "in2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:5.8-5.11"
+          }
+        },
+        "in3": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:6.8-6.11"
+          }
+        },
+        "in4": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:7.8-7.11"
+          }
+        },
+        "in5": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:8.8-8.11"
+          }
+        },
+        "in6": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:9.8-9.11"
+          }
+        },
+        "in7": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:10.8-10.11"
+          }
+        },
+        "in8": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:11.8-11.11"
+          }
+        },
+        "out1": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:12.9-12.13"
+          }
+        },
+        "out2": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:13.9-13.13"
+          }
+        },
+        "w1": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:16.7-16.9"
+          }
+        },
+        "w2": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "rtl/wide_gates.v:17.7-17.9"
+          }
+        }
+      }
+    }
+  }
+}

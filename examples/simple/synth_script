@@ -1,0 +1,20 @@
+rm basic_ors_built.json
+rm basic_gates_built.json
+rm MIGs_built.json
+yosys -p 'read -vlog2k rtl/basic_ors.v
+hierarchy -top basic_ors
+prep -auto-top
+write_json basic_ors_built.json
+show -format dot -prefix basic_ors_dot'
+
+yosys -p 'read -vlog2k rtl/basic_gates.v
+hierarchy -top basic_gates
+prep -auto-top
+write_json basic_gates_built.json
+show -format dot -prefix basic_gates_dot'
+
+yosys -p 'read -vlog2k rtl/wide_gates.v
+hierarchy -top wide_gates
+prep -auto-top
+write_json wide_gates_built.json
+show -format dot -prefix wide_gates_dot'

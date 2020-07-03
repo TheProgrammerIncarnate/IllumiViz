@@ -1,0 +1,6 @@
+rm serv_built.json
+yosys -p 'read -vlog2k ay38500NTSC.v
+hierarchy -top ay38500NTSC
+prep -auto-top -flatten
+write_json ay38500_built.json
+show -format dot -prefix ay38500_dot'

@@ -1,0 +1,6 @@
+rm serv_built.json
+yosys -p 'read -vlog2k rtl/*
+hierarchy -top i2c_master
+prep -auto-top
+write_json -compat-int i2c_built.json
+show -format dot -prefix i2c_dot'

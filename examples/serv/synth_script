@@ -1,0 +1,7 @@
+rm serv_built.json
+yosys -p 'read -vlog2k rtl/*
+hierarchy -top serv_top
+prep -auto-top
+write_json serv_built.json
+show -format dot -prefix serv_dot'
+#yosys -p 'synth -flatten -json serv_built.json' rtl/serv_top.v
